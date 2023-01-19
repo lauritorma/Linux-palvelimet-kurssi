@@ -19,7 +19,7 @@ Kun virtuaalikone oli luotu, valitsin sen valikosta ja siirryin sen asetuksiin. 
 Oikealla ”Attributes” kohdan alla valitsin pienen levykuvakkeen kohdalta ”Choose a disk file”. Etsin ISO-kuvan (debian-live-11.6.0-amd64-xfce+nonfree.iso) ja valitsin sen.
 Tallensin asetukset.
 
-Seuraavaksi tuplaklikkasin virtuaalikonetta ja boottasin sen. Valitsin bootata valinnalla ”Debian GNU/Linux Live”. Debian latautui hetken ja työpöytä avautui näytölle. Valitsin työpöydän vasemmasta alareunasta ”Install Debian”. 
+Seuraavaksi tuplaklikkasin virtuaalikonetta ja boottasin sen. Suoritin boottauksen valinnalla ”Debian GNU/Linux Live”. Debian latautui hetken ja työpöytä avautui näytölle. Valitsin työpöydän vasemmasta alareunasta ”Install Debian”. 
 Installerissa valitsin ensimmäisenä kieleksi ”American English” ja aikavyöhykkeeksi Helsinki. Näppäimistön kieleksi valitsin Suomi.
 Seuraavassa kohdassa valitsin ”Erase Disk”. Tämän jälkeen täytin käyttäjätietoihin oman nimeni, valitsin käyttäjänimen ja salasanan.
 Seuraavana aukesi ”Summary” välilehti. Valitsin ”Install”. 
