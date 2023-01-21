@@ -36,13 +36,8 @@ Tiivistelmä artikkelista *Command Line Basics Revisited* (Karvinen, Tero 2020-0
 
 ## a) Micro
 
-Avasin Debianissa komentorivin ja syötin komennon *sudo apt install micro*.  
-Komentoriville tuli ilmoitus, joka kertoi tämän operaation käyttävän 14,4 MB lisätilaa. Valitsin vaihtoehdon kyllä.  
+Avasin Debianissa komentorivin ja syötin komennon *curl https://getmic.ro | bash*.  
 Micron asennus onnistui.  
 
-
-
-
-
-
+![Screenshot (77)](https://user-images.githubusercontent.com/90974678/213872831-9538674b-8a5d-430b-a4d0-e4eabec1f40b.png)
 
