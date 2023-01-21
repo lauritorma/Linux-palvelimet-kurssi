@@ -39,5 +39,13 @@ Tiivistelmä artikkelista *Command Line Basics Revisited* (Karvinen, Tero 2020-0
 Avasin Debianissa komentorivin ja syötin komennon *curl https://getmic.ro | bash*.  
 Micron asennus onnistui.  
 
-![Screenshot (77)](https://user-images.githubusercontent.com/90974678/213872831-9538674b-8a5d-430b-a4d0-e4eabec1f40b.png)
+![Screenshot (77)](https://user-images.githubusercontent.com/90974678/213872831-9538674b-8a5d-430b-a4d0-e4eabec1f40b.png)  
+
+## b) Rauta  
+
+Asensin komentorivillä lshw:n komennolla *sudo apt-get install lshw*.  
+Seuraavaksi syötin komennon *sudo lshw -short -sanitize* ja sain listauksen virtuaalikoneen raudasta.  
+
+<img width="613" alt="image" src="https://user-images.githubusercontent.com/90974678/213873108-017687f9-9c69-49c2-a828-3f9a9075a987.png">
+
 
