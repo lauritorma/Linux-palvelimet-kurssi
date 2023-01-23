@@ -127,6 +127,9 @@ on kansio, josta löytyvät järjestelmän asetukset sisältävät kansiot ja ti
 
 ![image](https://user-images.githubusercontent.com/90974678/214029258-0b4f2573-deda-418a-b431-9784c1abfa40.png)
 
+Lähde:  
+Command Line Basics Revisited, Tero Karvinen 2020-02-03, Luettavissa: https://terokarvinen.com/2020/command-line-basics-revisited/?fromSearch=command%20line%20basics%20revisited 
+
 
 ### "/media/"
 
