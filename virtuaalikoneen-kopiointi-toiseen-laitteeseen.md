@@ -73,3 +73,5 @@ Ongelman ratkaisu oli avata koneen BIOS ja käydä sallimassa virtualisointi. Av
 
 1.
 
+![image](https://user-images.githubusercontent.com/90974678/213999878-72dd936f-2b78-4724-ba0b-0a4073937056.png)
+
