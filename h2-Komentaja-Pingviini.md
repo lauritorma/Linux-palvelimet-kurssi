@@ -14,7 +14,7 @@ Aloitin Linux-ympäristössä suoritettavat tehtävät perjantaina 2023-01-20 kl
 -RAM: 8GB
 -Näytönohjain: Intel UHD Graphics 620  
 
-#### Quest
+#### Guest
 -Virtualisointiympäristönä Oracle VM VirtualBox 7.0.6  
 -Virtuaalikoneena Debian GNU/Linux 11 (Bullseye)  
 -Muisti: 4000 MB  
@@ -63,7 +63,7 @@ Jatkoin työskentelyä 2023-01-23 klo 12:50, siirrettyäni käytettävän virtua
 -RAM: 2x 8GB  
 -Virtualisointiympäristö: VM Oracle VirtualBox 7.0.6  
 
-### Quest
+### Guest
 -Virtualisointiympäristönä Oracle VM VirtualBox 7.0.6  
 -Virtuaalikoneena Debian GNU/Linux 11 (Bullseye)  
 -Muisti: 4000 MB  
