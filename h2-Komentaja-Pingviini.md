@@ -151,10 +151,13 @@ Tässä halusin tulostaa näytölle boot.log tiedoston sisällön, mutta jouduin
 
 ## e) The Friendly M
 
-1) Etsin polusta /etc/passwd käyttäjää lauritorma
+### 1) Etsin polusta /etc/passwd käyttäjää lauritorma
 
 ![image](https://user-images.githubusercontent.com/90974678/214032065-871d043f-c6cb-4f15-aed1-1d9da3e0c89a.png)
 
+### 2) Etsin tiedostosta "esimerkki.txt" sanaa "hakusana"
+
+![image](https://user-images.githubusercontent.com/90974678/214032864-159e6401-1d08-4fd2-bc73-a82031e98b75.png)
 
 
 
