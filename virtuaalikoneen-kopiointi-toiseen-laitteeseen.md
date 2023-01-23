@@ -6,7 +6,7 @@ Tämä dokumentti kuvaa ohjeena, miten onnistuin kopioimaan Linux-virtuaalikonee
 
 ## Laitteisto
 
-Tämän ohjeen prosessit on toteutettu alla listatulla laitteistolla.
+Tämän ohjeen prosessit on toteutettu alla listatulla laitteistolla.  
 
 ### Laite jolta virtuaalikone viedään
 
@@ -14,7 +14,7 @@ Tämän ohjeen prosessit on toteutettu alla listatulla laitteistolla.
 -OS: Microsoft Windows 11 Home  
 -Prosessori: Intel Core i5-8265U CPU @ 1.60GHz 1.80 GHz  
 -RAM: 8GB  
--Virtualisointiympäristö: VM Oracle VirtualBox 7.0.6  
+-Virtualisointiympäristö: VM Oracle VirtualBox 7.0.6 
  
 
 ### Laite jolle virtuaalikone tuodaan
@@ -33,7 +33,7 @@ Tämän ohjeen prosessit on toteutettu alla listatulla laitteistolla.
 
 ![Screenshot_20230123_091155](https://user-images.githubusercontent.com/90974678/213991911-64ba9732-4780-4e48-9c0d-4bb6d886fd12.png)
 
-2. Valitse virtuaalikone, jonka haluat viedä. Minun tapauksessani siis "DebianLauriTorma".  
+2. Valitse virtuaalikone, jonka haluat viedä. Minun tapauksessani siis "DebianLauriTorma", jonka OS on Debian (64-bit).  
 
 3. Valitse "Next"   
 
