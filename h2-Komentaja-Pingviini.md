@@ -127,9 +127,6 @@ on kansio, josta löytyvät järjestelmän asetukset sisältävät kansiot ja ti
 
 ![image](https://user-images.githubusercontent.com/90974678/214029258-0b4f2573-deda-418a-b431-9784c1abfa40.png)
 
-Lähde:  
-Command Line Basics Revisited, Tero Karvinen 2020-02-03, Luettavissa: https://terokarvinen.com/2020/command-line-basics-revisited/?fromSearch=command%20line%20basics%20revisited 
-
 
 ### "/media/"
 
@@ -150,6 +147,10 @@ on kansio, josta löytyy järjestelmän lokitiedostot.
 Tässä halusin tulostaa näytölle boot.log tiedoston sisällön, mutta jouduinkin suorittamaan komennon sudolla.
 
 ![image](https://user-images.githubusercontent.com/90974678/214031181-98e03e0c-a1e5-457b-baa5-15e7f796e8ff.png)
+
+Lähde:  
+Command Line Basics Revisited, Tero Karvinen 2020-02-03, Luettavissa: https://terokarvinen.com/2020/command-line-basics-revisited/?fromSearch=command%20line%20basics%20revisited 
+
 
 
 ## e) The Friendly M
