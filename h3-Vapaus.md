@@ -34,3 +34,81 @@ What is Free Software?. FSF 2022-06-25. Luettavissa: https://www.gnu.org/philoso
 * Tullakseen hyväksytyksi, lisenssin täytyy sallia muun muassa vapaa käyttö, kopiointi, levitys, muokkaaminen  
 * Lisenssit voidaan kategorioida eri tavalla, tämän kirjan tapauksessa käytetään funktionaalista ja historiallista luokittelujärjestelmää  
 
+## a) Kolmen ohjelman lisenssit
+
+Asensin edellisessä harjoituksessa kolme ohjelmaa:  
+* googler  
+* cowsay  
+* fortune  
+
+### googler
+
+googler käyttää GPL-3.0 lisenssiä. Tämä selviää googlerin repositorysta.  
+
+![image](https://user-images.githubusercontent.com/90974678/214613518-b36b7801-1520-45f3-baa2-5a7662469ec6.png)  
+##### Lähde: https://github.com/jarun/googler  
+
+
+Kyseessä on vapaa lisenssi. Tärkein lisenssin oikeusvaikutus on, että käyttäjän on hyväksyttävä GPL:n ehdot, jotta hän tekijänoikeuslain mukaan saa jakaa ohjelmaa jonka lisenssinä on GPL.  
+
+### cowsay
+
+cowsay käyttää GPL-3.0 lisenssiä. Tämä selviää cowsayn repositorysta.
+
+![image](https://user-images.githubusercontent.com/90974678/214615252-7fb0d451-4af7-4023-b8c0-1129b7d43ad7.png)  
+##### Lähde: https://github.com/cowsay-org/cowsay  
+
+
+Kyseessä on vapaa lisenssi. Tärkein lisenssin oikeusvaikutus on, että käyttäjän on hyväksyttävä GPL:n ehdot, jotta hän tekijänoikeuslain mukaan saa jakaa ohjelmaa jonka lisenssinä on GPL.  
+
+### fortune
+
+fortune käyttää MIT-lisenssiä. Tämä selviää fortunen wikipedia-artikkelista. Wikipedia tietysti voi olla kyseenalainen lähde, mutta lisenssistä oli vaikeaa löytää tietoa muualta.
+
+![image](https://user-images.githubusercontent.com/90974678/214616852-82156dea-2a22-4cbb-811b-a03d47534349.png)  
+##### Lähde: https://en.wikipedia.org/wiki/Fortune_(Unix)  
+
+
+Kyseessä on vapaa lisenssi. Tärkein lisenssin oikeusvaikutus on, että MIT-lisenssin omaavaa ohjelmaa käyttävän on säilytettävä ohjelman alkuperäiset tekijänoikeustiedot.
+
+
+#### Lähteet
+
+* GNU General Public License. FSF 2022-01-20. Luettavissa: https://www.gnu.org/licenses/gpl-3.0.html
+* MIT-lisenssi. Linux.fi 2020-11-05. Luettavissa: https://www.linux.fi/wiki/MIT-lisenssi  
+
+## b) Säännöllistä  
+
+Loin Documents-kansioon uuden tiedoston *contacts.txt* ja lisäsin sinne muutaman rivin tekstiä. Seuraavaksi poimin tiedostosta tietoa komennolla  
+```
+grep 'Ma' contacts.txt 
+```   
+sekä  
+```
+grep 'Lauri' contacts.txt  
+```  
+
+![image](https://user-images.githubusercontent.com/90974678/214622194-3cbd5f0c-ac87-4f2d-a110-f7127e0fd10f.png)  
+
+## c) Pipe  
+
+Suoritin kaksi esimerkkiä putkituksesta.  
+Ensin putkitin komennot  
+```
+fortune | cowsay  
+```  
+
+![image](https://user-images.githubusercontent.com/90974678/214625948-142c9cf3-75b5-4c71-b005-631d1902cb43.png)  
+
+![image](https://user-images.githubusercontent.com/90974678/214626069-43ebff85-cf3d-4256-8977-1b854ee7ddb9.png)  
+
+Jonka jälkeen putkitin komennot  
+```
+cat contacts.txt | sort  
+```  
+
+## d) Regex Crossword, tutorial
+
+
+
+
