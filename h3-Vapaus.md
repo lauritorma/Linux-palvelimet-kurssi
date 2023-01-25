@@ -23,8 +23,7 @@
 * Vapaata ohjelmistoa saa käyttää myös kaupallisessa käytössä  
 * Jos ohjelmisto ei täytä neljää keskeistä vapaan ohjelmiston kriteeriä, se ei ole *vapaa*  
 
-Lähde: 
-
+#### Lähde: 
 What is Free Software?. FSF 2022-06-25. Luettavissa: https://www.gnu.org/philosophy/free-sw.html  
 
 
@@ -33,6 +32,10 @@ What is Free Software?. FSF 2022-06-25. Luettavissa: https://www.gnu.org/philoso
 * OSI hyväksyy avoimen lähdekoodin lisensseiksi sellaiset lisenssit, jotka täyttävät tarvittavat vapaan käytön vaatimukset    
 * Tullakseen hyväksytyksi, lisenssin täytyy sallia muun muassa vapaa käyttö, kopiointi, levitys, muokkaaminen  
 * Lisenssit voidaan kategorioida eri tavalla, tämän kirjan tapauksessa käytetään funktionaalista ja historiallista luokittelujärjestelmää  
+
+#### Lähde:
+The Rise of Open Source Licensing. 5 Open Source Licenses as Alternative Governance Mechanisms": 5.1.1 - 5.1.4 (sivu 113 - 121). Mikko Välimäki 2005-06-03. Luettavissa: http://lib.tkk.fi/Diss/2005/isbn9529187793/isbn9529187793.pdf  
+
 
 ## a) Kolmen ohjelman lisenssit
 
@@ -46,7 +49,8 @@ Asensin edellisessä harjoituksessa kolme ohjelmaa:
 googler käyttää GPL-3.0 lisenssiä. Tämä selviää googlerin repositorysta.  
 
 ![image](https://user-images.githubusercontent.com/90974678/214613518-b36b7801-1520-45f3-baa2-5a7662469ec6.png)  
-##### Lähde: https://github.com/jarun/googler  
+##### Lähde:  
+https://github.com/jarun/googler  
 
 
 Kyseessä on vapaa lisenssi. Tärkein lisenssin oikeusvaikutus on, että käyttäjän on hyväksyttävä GPL:n ehdot, jotta hän tekijänoikeuslain mukaan saa jakaa ohjelmaa jonka lisenssinä on GPL.  
@@ -56,7 +60,8 @@ Kyseessä on vapaa lisenssi. Tärkein lisenssin oikeusvaikutus on, että käytt�
 cowsay käyttää GPL-3.0 lisenssiä. Tämä selviää cowsayn repositorysta.
 
 ![image](https://user-images.githubusercontent.com/90974678/214615252-7fb0d451-4af7-4023-b8c0-1129b7d43ad7.png)  
-##### Lähde: https://github.com/cowsay-org/cowsay  
+##### Lähde:  
+https://github.com/cowsay-org/cowsay  
 
 
 Kyseessä on vapaa lisenssi. Tärkein lisenssin oikeusvaikutus on, että käyttäjän on hyväksyttävä GPL:n ehdot, jotta hän tekijänoikeuslain mukaan saa jakaa ohjelmaa jonka lisenssinä on GPL.  
@@ -66,7 +71,8 @@ Kyseessä on vapaa lisenssi. Tärkein lisenssin oikeusvaikutus on, että käytt�
 fortune käyttää MIT-lisenssiä. Tämä selviää fortunen wikipedia-artikkelista. Wikipedia tietysti voi olla kyseenalainen lähde, mutta lisenssistä oli vaikeaa löytää tietoa muualta.
 
 ![image](https://user-images.githubusercontent.com/90974678/214616852-82156dea-2a22-4cbb-811b-a03d47534349.png)  
-##### Lähde: https://en.wikipedia.org/wiki/Fortune_(Unix)  
+##### Lähde:  
+https://en.wikipedia.org/wiki/Fortune_(Unix)  
 
 
 Kyseessä on vapaa lisenssi. Tärkein lisenssin oikeusvaikutus on, että MIT-lisenssin omaavaa ohjelmaa käyttävän on säilytettävä ohjelman alkuperäiset tekijänoikeustiedot.
@@ -108,6 +114,10 @@ cat contacts.txt | sort
 ```  
 
 ## d) Regex Crossword, tutorial
+
+Suoritin Regex Crossword tutorialin tehtävät.  
+
+![image](https://user-images.githubusercontent.com/90974678/214630734-2d62323a-47b3-413c-9207-4ea10969be28.png)
 
 
 
