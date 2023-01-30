@@ -38,7 +38,7 @@ Kommentti artikkelin kommenttiosiossa. SBPS 2021. Luettavissa: https://news.ycom
 
 Esimerkkirivi  
 ```Jan 21 16:55:24 lauritorma-virtualbox sudo: lauritorma : TTY=pts/0 ; PWD=/home/lauritorma ; USER=root ; COMMAND=/usr/bin/apt-get install Micro```  
-kertoo, että tmmikuun 21. päivänä kello 16:55:24 laitteella on ajettu home/lauritorma hakemistossa root-käyttäjän oikeuksilla komento, jolla on asennettu ohjelma nimeltä Micro.  
+kertoo, että tmmikuun 21. päivänä kello 16:55:24 laitteella on ajettu ```home/lauritorma``` hakemistossa root-käyttäjän oikeuksilla komento, jolla on asennettu ohjelma nimeltä Micro.  
 
 ![image](https://user-images.githubusercontent.com/90974678/215460494-96c8356e-8847-4ef4-8db8-0dc0d24806e9.png)
 
@@ -50,7 +50,7 @@ Tiedostoa ```access.log``` luettaessa tulostui vain tyhjää, mutta lisäämäll
 
 Esimerkkirivi  
 ```127.0.0.1 - - [27/Jan/2023:14:13:15 +0200] "GET /favicon.ico HTTP/1.1" 404 487 "http://localhost/" "Mozilla/5.0 (X11; Linux x86_64; rv:102.0) Gecko/20100101 Firefox/102.0"```  
-kertoo, että osoitteesta 127.0.0.1 on tammikuun 27. päivänä kello 14:13:15 UTC +2 aikaa lähetetty GET-pyyntö. Pyyntö näyttää kohdistuvan /favicon.ico polkuun. Osoitteena on localhost.  
+kertoo, että osoitteesta 127.0.0.1 on tammikuun 27. päivänä kello 14:13:15 UTC +2 aikaa lähetetty GET-pyyntö. Pyyntö näyttää kohdistuvan ```/favicon.ico``` polkuun. Osoitteena on localhost.  
 Rivin lopussa kerrotaan tietoja selaimesta, eli tässä tapauksessa Mozilla Firefox.  
 
 ![image](https://user-images.githubusercontent.com/90974678/215464083-b052c490-6fb7-401b-b8e7-edf424d3159b.png)
