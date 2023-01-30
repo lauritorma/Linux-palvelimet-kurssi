@@ -36,8 +36,9 @@ Kommentti artikkelin kommenttiosiossa. SBPS 2021. Luettavissa: https://news.ycom
 
 ### /var/log/auth.log
 
-Esimerkkirivi ```Jan 21 16:55:24 lauritorma-virtualbox sudo: lauritorma : TTY=pts/0 ; PWD=/home/lauritorma ; USER=root ; COMMAND=/usr/bin/apt-get install Micro```  
-kertoo, että tmmikuun 21. päivänä kello 16:55:24 laitteella on ajettu home/lauritorma hakemistossa root-käyttäjänä komento, jolla on asennettu ohjelma nimeltä Micro.  
+Esimerkkirivi  
+```Jan 21 16:55:24 lauritorma-virtualbox sudo: lauritorma : TTY=pts/0 ; PWD=/home/lauritorma ; USER=root ; COMMAND=/usr/bin/apt-get install Micro```  
+kertoo, että tmmikuun 21. päivänä kello 16:55:24 laitteella on ajettu home/lauritorma hakemistossa root-käyttäjän oikeuksilla komento, jolla on asennettu ohjelma nimeltä Micro.  
 
 ![image](https://user-images.githubusercontent.com/90974678/215460494-96c8356e-8847-4ef4-8db8-0dc0d24806e9.png)
 
@@ -45,7 +46,7 @@ kertoo, että tmmikuun 21. päivänä kello 16:55:24 laitteella on ajettu home/l
 ### var/log/apache2/access.log
 
 ``` sudo cd apache2 ``` ei onnistunut, joten täytyi kirjautua komennolla ```sudo -s``` root-käyttäjäksi, jotta pääsin siirtymään apache2-hakemistoon.  
-Tiedostoa access.log luettaessa tulostui vain tyhjää, mutta lisäämällä .1 login perään ruutuun ilmestyi lokitietoja.  
+Tiedostoa ```access.log``` luettaessa tulostui vain tyhjää, mutta lisäämällä tiedoston nimen loppuun .1 ruutuun ilmestyi lokitietoja.  
 
 Esimerkkirivi  
 ```127.0.0.1 - - [27/Jan/2023:14:13:15 +0200] "GET /favicon.ico HTTP/1.1" 404 487 "http://localhost/" "Mozilla/5.0 (X11; Linux x86_64; rv:102.0) Gecko/20100101 Firefox/102.0"```  
@@ -57,11 +58,26 @@ Rivin lopussa kerrotaan tietoja selaimesta, eli tässä tapauksessa Mozilla Fire
 
 ### var/log/apache2/error.log  
 
-Myöskin error.log näytti vain tyhjää, mutta error.log.1 antoi lokitietoja. 
+Myöskin ```error.log``` näytti vain tyhjää, mutta ```error.log.1``` antoi lokitietoja. 
 
 Esimerkkirivi  
 ```[Fri Jan 27 23:30:08.186810 2023] [mpm_event:notice] [pid 698:tid 140379013483840] AH00489: Apache/2.4.54 (Debian) configured -- resuming normal operations```  
-Kertoo, että perjantaina 27. tammikuuta kello 23:30:08 on Apacheen tehty jonkinlaista konfigurointia ja nyt jatketaan normaalia toimintaa.  
+Kertoo, että perjantaina 27. tammikuuta kello 23:30:08 on Apacheen (jonka versio on 2.4.54) tehty jonkinlaista konfigurointia ja nyt jatketaan normaalia toimintaa.  
 
 ![image](https://user-images.githubusercontent.com/90974678/215465325-78287d5e-98e6-46a6-a3dc-683bca050623.png)
+
+## b) Aiheuta  
+
+Tässä kohtaa poistuin root-käyttäjätilasta näppäinyhdistelmällä ```ctrl + D``` ja siirryin takaisin ```/var/log``` hakemistoon  
+
+Aiheutin ```auth.log``` lokiin tapahtuman, jossa tyhjensin ```var/log/messages``` tiedoston komennolla ```sudo truncate -s 0 messages```
+
+```Jan 30 13:41:52 lauritorma-virtualbox sudo: lauritorma : TTY=pts/0 ; PWD=/var/log ; USER=root ; COMMAND=/usr/bin/truncate -s 0 messages```  
+
+![image](https://user-images.githubusercontent.com/90974678/215469006-7da4dccf-5c28-4091-871d-5257d7fc9e8f.png)  
+
+Rivillä kerrotaan, että Tammikuun 30. päivänä kello 13:41:52 ```lauritorma-virtualbox``` laitteella ajettiin root-käyttäjän oikeuksilla komento ```/var/log``` hakemistossa.  
+
+
+
 
