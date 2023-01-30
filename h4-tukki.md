@@ -80,4 +80,9 @@ Rivillä kerrotaan, että Tammikuun 30. päivänä kello 13:41:52 ```lauritorma-
 
 
 
+### Tehtävänantojen lähde  
+Linux Palvelimet 2023 alkukevät. Tero Karvinen 2023. Luettavissa: https://terokarvinen.com/2023/linux-palvelimet-2023-alkukevat/  
+
+
+
 
