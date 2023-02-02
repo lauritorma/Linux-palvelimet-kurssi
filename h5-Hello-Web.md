@@ -16,7 +16,11 @@
 -Keskusmuisti: 4000 MB   
 -Selain: Mozilla Firefox 102.7.0esr (64-bit)  
 
-## x)
+## x) Tiivistelmä "Indie hackers"-podcastista  
+
+Tämä tehtävä on kesken. Päivitän tehtävää myöhemmin.
+
+
 
 ## a) Apachen esimerkkisivun vaihto
 
