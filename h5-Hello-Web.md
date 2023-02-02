@@ -52,17 +52,31 @@ Siirryin selaimessa osoitteeseen ```http://localhost/~lauritorma/```. Selaimeen 
 
 ## c) Uusi käyttäjä  
 
-Loin uuden "vierailija" käyttäjän komennolla ```sudo useradd vierailija```. Loin käyttäjälle salasanan komennolla ```sudo passwd vierailija```.  
+Loin uuden käyttäjän "guest" komennolla ```sudo adduser guest```. Loin käyttäjälle salasanan ja täytin muut vaaditut tiedot.  
 
-![image](https://user-images.githubusercontent.com/90974678/216307814-3a29848c-2574-4fc5-8270-776c42792929.png)
+
+![image](https://user-images.githubusercontent.com/90974678/216318196-c11eaa16-73d6-45a1-a39b-6809c2d06f4a.png)
+
 
 Kirjauduin ulos "lauritorma"-käyttäjältä ja käynnistin virtuaalikoneen uudestaan.  
 
-![image](https://user-images.githubusercontent.com/90974678/216308213-2371f956-c450-4fee-8d72-35f63e8d2c20.png)  
+Kirjauduin "guest"-käyttäjälle sisään.  
 
-Yritin kirjautua "vierailija"-käyttäjälle sisään, mutta en onnistunut. Varmistin, että käytän oikeaa käyttäjänimeä ja salasanaa, mutta kirjautumisnäkymä luuppasi aina takaisin, kun klikkasin kirjautumisnappia.  
+![image](https://user-images.githubusercontent.com/90974678/216318487-6e216af4-410d-4b35-be73-3414605248b0.png)  
 
-En voinut täten jatkaa tätä tehtävää loppuun asti.  
+Yritin käynnistää apachen, mutta en onnistunut, sillä "guest"-käyttäjää ei löytynyt ```sudoers``` tiedostosta.  
+
+![image](https://user-images.githubusercontent.com/90974678/216319354-94aca530-b926-40a4-b793-3815520b95e3.png)
+
+Kirjauduin "lauritorma"-käyttäjälle ja lisäsin "guest"-käyttäjän sudo-grouppiin komennolla ```sudo usermod -a -G sudo guest```  
+
+![image](https://user-images.githubusercontent.com/90974678/216320156-11040168-28ef-4823-a169-791d5eaf0d78.png)
+
+Kirjauduin takaisin "guest"-käyttäjälle. Käynnistin apachen ja siirryin selaimessa osoitteeseen ```http://localhost/~guest/```
+
+![image](https://user-images.githubusercontent.com/90974678/216321786-6147a8d9-ee41-40df-b9f1-d1e7fdea9e92.png)
+
+Uuden käyttäjän kotisivun luonti onnistui.  
 
 ## d) HTML5-sivu  
 
@@ -75,6 +89,18 @@ Lisäsin Microssa index.html tiedostoon sisältöä.
 ![image](https://user-images.githubusercontent.com/90974678/216310316-a3e6e749-26c2-48be-9e82-499c497c918e.png)
 
 Siirryin selaimessa osoitteeseen ```http://localhost/~lauritorma/```. Muokatun ```index.html``` tiedoston sisältö tuli näkyviin.  
+
+![image](https://user-images.githubusercontent.com/90974678/216320988-847a819c-9537-45d8-b47a-ffc4ebf6d453.png)
+
+Kirjauduin seuraavaksi "guest"-käyttäjälle ja suoritin samat toimenpiteet. 
+
+![image](https://user-images.githubusercontent.com/90974678/216321254-440d86a4-110d-4bbe-8c78-a6da639c921c.png)
+
+
+![image](https://user-images.githubusercontent.com/90974678/216321198-8e94ad8d-9cb4-428b-a6f7-3a7ed33ccc42.png)
+
+![image](https://user-images.githubusercontent.com/90974678/216321350-bc89535a-a76e-487d-9d1f-18b9c8a0d08c.png)
+
 
 ### Tehtävänantojen lähde  
 Linux Palvelimet 2023 alkukevät. Tero Karvinen 2023. Luettavissa: https://terokarvinen.com/2023/linux-palvelimet-2023-alkukevat/  
