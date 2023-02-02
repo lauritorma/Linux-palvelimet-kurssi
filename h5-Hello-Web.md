@@ -72,7 +72,9 @@ Yritin käynnistää apachen, mutta en onnistunut, sillä "guest"-käyttäjää 
 
 ![image](https://user-images.githubusercontent.com/90974678/216319354-94aca530-b926-40a4-b793-3815520b95e3.png)
 
-Kirjauduin "lauritorma"-käyttäjälle ja lisäsin "guest"-käyttäjän sudo-grouppiin komennolla ```sudo usermod -a -G sudo guest```  
+Kirjauduin "lauritorma"-käyttäjälle ja lisäsin "guest"-käyttäjän sudo-grouppiin komennolla ```sudo usermod -a -G sudo guest```.  
+
+Löysin komennon artikkelista Adding Users To Sudoers In Linux – A Step-By-Step Tutorial. Pathak 2020. Luettavissa: https://www.linuxfordevices.com/tutorials/linux/adding-users-to-sudoers
 
 ![image](https://user-images.githubusercontent.com/90974678/216320156-11040168-28ef-4823-a169-791d5eaf0d78.png)
 
