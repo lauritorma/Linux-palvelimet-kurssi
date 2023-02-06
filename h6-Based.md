@@ -38,6 +38,8 @@ Getting Started. Apache Software Foundation 2023. Luettavissa: https://httpd.apa
 
 * Nimi-pohjainen virtual hosting on yleensä yksinkertaisempaa kuin IP-pohjainen.  
 * Kun pyyntö saapuu, palvelin pyrkii etsimään sopivimman ```<VirtualHost>``` argumentin, perustuen pyynnön käyttämään IP-osoitteeseen ja porttiin.  
+* Jokaiselle hostille tulee luoda ```<VirtualHost>``` blokki.
+* ```<VirtualHost>``` blokin sisällä oleva ```ServerName``` määrittää mitä hostia palvellaan ja ```DocumentRoot```missä sijainnissa on sisältö, joka on tarkoitettu kyseiselle hostille.
 
 
 #### Lähde  
@@ -143,8 +145,11 @@ Kävin lopuksi korjaamassa kirjoitusvirheen tiedostosta ```frontpage.conf```, jo
 
 Kaikki OK.  
 
-![image](https://user-images.githubusercontent.com/90974678/216951603-c315f369-ddb4-432c-bf12-13046b6def10.png)
+![image](https://user-images.githubusercontent.com/90974678/216951603-c315f369-ddb4-432c-bf12-13046b6def10.png)  
 
+
+### Tehtävänantojen lähde  
+Linux Palvelimet 2023 alkukevät. Tero Karvinen 2023. Luettavissa: https://terokarvinen.com/2023/linux-palvelimet-2023-alkukevat/  
 
 
 
