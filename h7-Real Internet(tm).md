@@ -73,6 +73,21 @@ Tarkistin apachen ja virtuaalipalvelimen toimivuuden menemällä selaimessa virt
 
 Kaikki ok.  
 
+## d) Merkkejä murtautumisyrityksistä  
+
+Etsin merkkejä murtautumisyrityksistä virtuaalipalvelimelleni.  
+
+Aloitin tutkimalla ```/var/log/auth.log``` tiedostoa ```less``` komennolla, mutta tekstiä oli niin paljon, että päätin hyödyntää grep-komentoa.  
+
+Etsin avainsanaa "Failed" sisältäviä rivejä komennolla ```less  /var/log/auth.log | grep "Failed"```.  
+
+Vastauksena löytyi yksi rivi:
+```
+Feb  9 11:24:17 localhost sshd[10327]: Failed password for invalid user thiago from 14.187.70.71 port 48497 ssh2
+````
+
+![image](https://user-images.githubusercontent.com/90974678/217807759-f93a1fc0-f42c-4a33-a72c-d43d5fbfa830.png)
+
 
 ### Tehtävänantojen lähde  
 Linux Palvelimet 2023 alkukevät. Tero Karvinen 2023. Luettavissa: https://terokarvinen.com/2023/linux-palvelimet-2023-alkukevat/  
