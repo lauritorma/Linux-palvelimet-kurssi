@@ -84,7 +84,9 @@ Etsin avainsanaa "Failed" sisältäviä rivejä komennolla ```less  /var/log/aut
 Vastauksena löytyi yksi rivi:
 ```
 Feb  9 11:24:17 localhost sshd[10327]: Failed password for invalid user thiago from 14.187.70.71 port 48497 ssh2
-````
+```  
+
+Rivistä nähdään, että käyttäjä "thiago" IP-osoitteesta 14.187.70.71 on yrittänyt kirjautua palvelimelle väärällä salasanalla.
 
 ![image](https://user-images.githubusercontent.com/90974678/217807759-f93a1fc0-f42c-4a33-a72c-d43d5fbfa830.png)
 
