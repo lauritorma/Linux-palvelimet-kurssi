@@ -18,6 +18,17 @@
 
 ## x) Tiivistelmä artikkelista "First Steps on a New Virtual Private Server – an Example on DigitalOcean and Ubuntu 16.04 LTS"  
 
+* Virtuaalipalvelimista on paljon tarjontaa. 
+* Opiskelijat voivat halutessaan käyttää GitHub Education-pakettia.  
+* Virtuaalipalvelimelle kirjaudutaan root-käyttäjänä vain ensimmäisellä kerralla. 
+* Tulimuuriin täytyy tehdä reikä esimerkiksi SSH:ta ja Apachea varten.  
+* Valitse aina hyvä salasana.  
+* Muista pitää paketit päivitettyinä  
+* Palvelimelle pääsee IP-osoitteella, tai vuokratulla nimellä.  
+
+#### Lähde  
+
+First Steps on a New Virtual Private Server – an Example on DigitalOcean and Ubuntu 16.04 LTS. Karvinen 2017. Luettavissa: https://terokarvinen.com/2017/first-steps-on-a-new-virtual-private-server-an-example-on-digitalocean/
 
 
 ## a) Virtuaalipalvelimen vuokraus
@@ -60,7 +71,10 @@ Tarkistin apachen ja virtuaalipalvelimen toimivuuden menemällä selaimessa virt
 
 ![image](https://user-images.githubusercontent.com/90974678/217802533-4231c561-fbce-467e-a4c3-d7d83ae16272.png)  
 
-Kaikki ok. 
+Kaikki ok.  
 
+
+### Tehtävänantojen lähde  
+Linux Palvelimet 2023 alkukevät. Tero Karvinen 2023. Luettavissa: https://terokarvinen.com/2023/linux-palvelimet-2023-alkukevat/  
 
 
