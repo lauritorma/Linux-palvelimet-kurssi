@@ -29,6 +29,19 @@ Valitsin Distroksi Debian 11 ja alueeksi eu-central. Valitsin halvimman Nanode 1
 
 ## b) 
 
+![image](https://user-images.githubusercontent.com/90974678/217800768-ad6d6102-bfa0-4235-ab99-bafc9b14d4d8.png)
 
-![image](https://user-images.githubusercontent.com/90974678/217789174-929d9596-f618-4886-8d1c-c42a3d521432.png)
+![image](https://user-images.githubusercontent.com/90974678/217801752-fad0c1a7-85fd-430d-bde5-df48b29b0987.png)
+
+![image](https://user-images.githubusercontent.com/90974678/217801600-1929994d-259c-476f-88eb-6bf9f170ce06.png)
+
+## c)
+
+![image](https://user-images.githubusercontent.com/90974678/217802042-86429f91-d187-4700-9dcb-da3e1a210da1.png)
+
+![image](https://user-images.githubusercontent.com/90974678/217802460-b15a8565-1aa8-4753-959b-4b63ffcd5407.png)
+
+![image](https://user-images.githubusercontent.com/90974678/217802533-4231c561-fbce-467e-a4c3-d7d83ae16272.png)
+
+
 
