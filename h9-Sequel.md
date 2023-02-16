@@ -70,6 +70,9 @@ Lopuksi poistin yhden rivin taulusta komennolla ```DELETE FROM items  WHERE name
 
 ### Lähteet
 
+Install PostgreSQL on Ubuntu – New user and database in 3 commands. Karvinen 2016. Luettavissa: https://terokarvinen.com/2016/03/03/install-postgresql-on-ubuntu-new-user-and-database-in-3-commands/  
+
+PostgreSQL Install and One Table Database – SQL CRUD tutorial for Ubuntu. Karvinen 2016. Luettavissa: https://terokarvinen.com/2016/03/05/postgresql-install-and-one-table-database-sql-crud-tutorial-for-ubuntu/
 
 Linux Palvelimet 2023 alkukevät. Tero Karvinen 2023. Luettavissa: https://terokarvinen.com/2023/linux-palvelimet-2023-alkukevat/  
 
