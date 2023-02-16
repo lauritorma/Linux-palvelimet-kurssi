@@ -40,7 +40,38 @@ Loin uuden PostgreSQL tietokannan komennolla ```sudo -u postgres createdb laurit
 
 ![image](https://user-images.githubusercontent.com/90974678/219357477-04105c55-ada9-44f2-8360-d98464f97148.png) 
 
-![image](https://user-images.githubusercontent.com/90974678/219358328-2d8bb4a6-7576-4186-82e4-79e1a52f19a4.png)
+
+## b) CRUD  
+
+Aloitin CRUD-operaatiot komennolla ```psql```.  
+
+Loin tietokantaan uuden taulun "items" komennolla ```CREATE TABLE items (id SERIAL PRIMARY KEY, name VARCHAR(200));```. items taulun on columnit "id" ja "name". id on pöydän pääavain.  
+
+Tarkastin komennolla ```\d````, että taulu on luotu ja löytyy.  
+
+![image](https://user-images.githubusercontent.com/90974678/219359203-b6a8af91-868d-4d90-a379-e9ce7461664a.png)
+
+Lisäsin items tauluun uusia arvoja komennolla ```INSERT INTO students(name) VALUES ('esimerkki');```.  
+
+![image](https://user-images.githubusercontent.com/90974678/219360145-a3435d94-4a42-4d9a-b096-e468d2e6f3cf.png) 
+
+Seuraavaksi halusin selata items taulua, joten annoin komennon ```SELECT * FROM items;```, joka tulosti koko taulun sisällön.  
+
+![image](https://user-images.githubusercontent.com/90974678/219360499-cf4295d2-4e5a-4409-b6b7-62ae11cc0b3a.png)  
+
+Päivitin items taulun tietoja komennolla ```UPDATE items SET name='Laptop' WHERE name='Computer';```.  
+
+![image](https://user-images.githubusercontent.com/90974678/219360761-c792bf7c-e5fe-47a8-a8c7-1b045f00663a.png)
+
+Lopuksi poistin yhden rivin taulusta komennolla ```DELETE FROM items  WHERE name='Keyboard';```.  
+
+![image](https://user-images.githubusercontent.com/90974678/219361121-109528aa-727e-49dd-b6be-867a2d936359.png)
+
+
+### Lähteet
+
+
+Linux Palvelimet 2023 alkukevät. Tero Karvinen 2023. Luettavissa: https://terokarvinen.com/2023/linux-palvelimet-2023-alkukevat/  
 
 
 
