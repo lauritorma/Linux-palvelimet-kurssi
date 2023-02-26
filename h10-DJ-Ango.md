@@ -76,28 +76,46 @@ Loin vielä käyttöliittymän kautta toisen "lauritorma" käyttäjän, jolle an
 
 ### Tietokannan luonti  
 
+Päätin luoda tietokannan verkkokaupan tuotteita varten. Loin uuden kansion ```prm``` (Product Relationship Manafement) komennolla ```./manage.py startapp rrm```.
+
 ![image](https://user-images.githubusercontent.com/90974678/221437040-bbee2edf-0b41-4e78-841c-03879a592ff4.png)
 
+Seuraavaksi lisäsin prm-sovelluksen ```lauribase/settings.py``` tiedoston INSTALLED_APPS kohtaan microlla.  
 
-![image](https://user-images.githubusercontent.com/90974678/221437030-5e50b3df-4765-49ca-9c44-0ef75c545b5f.png)
+![image](https://user-images.githubusercontent.com/90974678/221437030-5e50b3df-4765-49ca-9c44-0ef75c545b5f.png)  
 
-![image](https://user-images.githubusercontent.com/90974678/221437182-a9347b4a-0983-4706-8fce-49c92e71c7ac.png)
+Muokkasin microlla ```prm/models.py``` tiedostoa ja lisäsin sinne luokan "Product", joka sisältää "productname" sekä "description" pylväät.  
 
-![image](https://user-images.githubusercontent.com/90974678/221437212-d9ef747b-e310-4166-a2b6-614e58ece689.png)
+![image](https://user-images.githubusercontent.com/90974678/221437182-a9347b4a-0983-4706-8fce-49c92e71c7ac.png)  
 
-![image](https://user-images.githubusercontent.com/90974678/221437380-2bcab27b-5b25-41ff-9a8c-6b0bdc0fb474.png)
+Päivitin tietokannat.  
 
-![image](https://user-images.githubusercontent.com/90974678/221437409-d376a862-4d44-4658-8099-6f70ac30f725.png)
+![image](https://user-images.githubusercontent.com/90974678/221437212-d9ef747b-e310-4166-a2b6-614e58ece689.png)  
 
-![image](https://user-images.githubusercontent.com/90974678/221437763-414f7428-5df6-4106-a8d6-d4aeafd407a6.png)
+Rekisteröin tietokannan muokkaamalla ```crm/admin.py``` tiedostoa microlla.  
 
-![image](https://user-images.githubusercontent.com/90974678/221437809-482bc2f8-705d-4ae8-9cde-9c6e27a3e8b0.png)
+![image](https://user-images.githubusercontent.com/90974678/221437380-2bcab27b-5b25-41ff-9a8c-6b0bdc0fb474.png)  
+
+```/admin``` sivulle ilmestyi uusi PRM-appi ja sinne Products-taulu.  
+
+![image](https://user-images.githubusercontent.com/90974678/221437409-d376a862-4d44-4658-8099-6f70ac30f725.png)  
+
+Halusin vielä muokata ```crm/models.py``` tiedostoa niin, saisin lisättyjen tuotteiden nimet näkymään myös käyttöliittymän listauksessa. 
+
+![image](https://user-images.githubusercontent.com/90974678/221437763-414f7428-5df6-4106-a8d6-d4aeafd407a6.png)  
+
+Pystyin nyt lisäämään Product-tauluun uusia tuotteita.  
+
+![image](https://user-images.githubusercontent.com/90974678/221437809-482bc2f8-705d-4ae8-9cde-9c6e27a3e8b0.png)  
+
+Tuotteita pystyi myös muokkaamaan, sekä poistamaan.  
 
 ![image](https://user-images.githubusercontent.com/90974678/221437824-a3c94239-9b78-4036-ab6b-596ecc114bec.png)
 
 
 ### Lähteet
 
+Django 4 Instant Customer Database Tutorial. Karvinen 2022. Luettavissa: https://terokarvinen.com/2022/django-instant-crm-tutorial/  
 
 Linux Palvelimet 2023 alkukevät. Tero Karvinen 2023. Luettavissa: https://terokarvinen.com/2023/linux-palvelimet-2023-alkukevat/  
 
