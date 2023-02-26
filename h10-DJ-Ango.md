@@ -52,6 +52,52 @@ Siirryin selaimessa osoitteeseen ```http://127.0.0.1:8000/```. Oletussivu aukesi
 ![image](https://user-images.githubusercontent.com/90974678/221436052-29168829-d8c7-4796-bc97-2894b532fec4.png)  
 
 
+### Käyttäjien lisääminen  
+
+Seuraavaksi halusin luoda käyttäjän, jotta pääsisin käsiksi ylläpitäjien sivuun.  
+
+Aloitin päivittämällä tietokannat.  
+
+![image](https://user-images.githubusercontent.com/90974678/221436299-f79e8df8-289b-4369-b5be-b2e9663143ad.png)  
+
+Seuraavaksi asensin pwgen-ohjelman komennolla ```sudo apt-get install pwgen``` ja loin komennolla ```pwgen -s 20 1``` uuden salasanan. Loin uuden superuserin komennolla ```./manage.py createsuperuser```, annoin sen nimeksi ```admin1``` ja salasanaksi juuri generoimani salasanan. Sähköpostin jätin tyhjäksi.  
 
 
+![Näyttökuva 2023-02-26 225017](https://user-images.githubusercontent.com/90974678/221436470-8a0a6b4f-c077-4b51-b3ee-0391a315b225.png)
+
+Siirryin ```/admin``` sivulle ja pääsin kirjautumaan sisään.  
+
+![image](https://user-images.githubusercontent.com/90974678/221436670-a1da4512-920c-4918-94fb-002ed3f379d4.png)
+
+Loin vielä käyttöliittymän kautta toisen "lauritorma" käyttäjän, jolle annoin sekä staff, että superuser oikeudet.  
+
+![image](https://user-images.githubusercontent.com/90974678/221436844-987213c5-ef76-4981-bc83-733676d6a739.png)
+
+
+### Tietokannan luonti  
+
+![image](https://user-images.githubusercontent.com/90974678/221437040-bbee2edf-0b41-4e78-841c-03879a592ff4.png)
+
+
+![image](https://user-images.githubusercontent.com/90974678/221437030-5e50b3df-4765-49ca-9c44-0ef75c545b5f.png)
+
+![image](https://user-images.githubusercontent.com/90974678/221437182-a9347b4a-0983-4706-8fce-49c92e71c7ac.png)
+
+![image](https://user-images.githubusercontent.com/90974678/221437212-d9ef747b-e310-4166-a2b6-614e58ece689.png)
+
+![image](https://user-images.githubusercontent.com/90974678/221437380-2bcab27b-5b25-41ff-9a8c-6b0bdc0fb474.png)
+
+![image](https://user-images.githubusercontent.com/90974678/221437409-d376a862-4d44-4658-8099-6f70ac30f725.png)
+
+![image](https://user-images.githubusercontent.com/90974678/221437763-414f7428-5df6-4106-a8d6-d4aeafd407a6.png)
+
+![image](https://user-images.githubusercontent.com/90974678/221437809-482bc2f8-705d-4ae8-9cde-9c6e27a3e8b0.png)
+
+![image](https://user-images.githubusercontent.com/90974678/221437824-a3c94239-9b78-4036-ab6b-596ecc114bec.png)
+
+
+### Lähteet
+
+
+Linux Palvelimet 2023 alkukevät. Tero Karvinen 2023. Luettavissa: https://terokarvinen.com/2023/linux-palvelimet-2023-alkukevat/  
 
