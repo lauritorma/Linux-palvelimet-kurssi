@@ -100,7 +100,7 @@ Rekisteröin tietokannan muokkaamalla ```crm/admin.py``` tiedostoa microlla.
 
 ![image](https://user-images.githubusercontent.com/90974678/221437409-d376a862-4d44-4658-8099-6f70ac30f725.png)  
 
-Halusin vielä muokata ```crm/models.py``` tiedostoa niin, saisin lisättyjen tuotteiden nimet näkymään myös käyttöliittymän listauksessa. 
+Halusin vielä muokata ```prm/models.py``` tiedostoa niin, saisin lisättyjen tuotteiden nimet näkymään myös käyttöliittymän listauksessa. 
 
 ![image](https://user-images.githubusercontent.com/90974678/221437763-414f7428-5df6-4106-a8d6-d4aeafd407a6.png)  
 
