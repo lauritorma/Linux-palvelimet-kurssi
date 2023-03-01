@@ -92,7 +92,7 @@ Päivitin tietokannat.
 
 ![image](https://user-images.githubusercontent.com/90974678/221437212-d9ef747b-e310-4166-a2b6-614e58ece689.png)  
 
-Rekisteröin tietokannan muokkaamalla ```crm/admin.py``` tiedostoa microlla.  
+Rekisteröin tietokannan muokkaamalla ```prm/admin.py``` tiedostoa microlla.  
 
 ![image](https://user-images.githubusercontent.com/90974678/221437380-2bcab27b-5b25-41ff-9a8c-6b0bdc0fb474.png)  
 
