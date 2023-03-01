@@ -76,7 +76,7 @@ Loin vielä käyttöliittymän kautta toisen "lauritorma" käyttäjän, jolle an
 
 ### Tietokannan luonti  
 
-Päätin luoda tietokannan verkkokaupan tuotteita varten. Loin uuden kansion ```prm``` (Product Relationship Manafement) komennolla ```./manage.py startapp rrm```.
+Päätin luoda tietokannan verkkokaupan tuotteita varten. Loin uuden kansion ```prm``` (Product Relationship Manafement) komennolla ```./manage.py startapp prm```.
 
 ![image](https://user-images.githubusercontent.com/90974678/221437040-bbee2edf-0b41-4e78-841c-03879a592ff4.png)
 
