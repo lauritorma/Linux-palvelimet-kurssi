@@ -18,7 +18,9 @@
 
 ## a) Djangon tuotantoasennus  
 
-Aloitin työskentelyn 1.3.2023 klo 18.39.  
+### Alkutoimet  
+
+#### ⏰ 1.3.2023 klo 18.39.
 
 Aloitin Djangon tuotantoasennuksen päivittämällä ohjelmistot.  
 ```$ sudo apt-get update```  
@@ -31,6 +33,9 @@ Asetin vielä micron oletus-tekstieditoriksi.
    
 ![image](https://user-images.githubusercontent.com/90974678/222205941-240282c6-792d-43e5-b46c-f91cc02ed1c5.png)  
 
+### Apache 2 ja /static/ hakemisto  
+
+#### ⏰ 1.3.2023 klo 18.45.  
   
 Olin jo aiemmin asentanut apachen, joten vaihdoin seuraavaksi sen oletussivun.  
 ```$ echo "This is Lauri Torma website" | sudo tee /var/www/html/index.html```  
@@ -67,6 +72,40 @@ Testasin, että conffaus on onnistunut ja koska vastauksena tuli "Syntax OK", k�
 ```$ sudo systemctl restart apache2```  
   
 ![image](https://user-images.githubusercontent.com/90974678/222212273-d7f10493-4554-4437-8d38-091a970577ca.png)  
+
+Siirryin selaimessa osoitteeseen ```http://localhost/static/``` ja haluttu sisältö tuli näkyviin.  
+
+![image](https://user-images.githubusercontent.com/90974678/222218472-2f77c3d4-e9fa-4147-b643-cbf7748c7d9d.png)  
+  
+### Djangon asennus virtuaaliympäristöön  
+
+#### ⏰ 1.3.2023 klo 19.40.  
+
+Olin jo aiemmin asentanut virtualenvin, joten siirryin seuraavaksi ```publicwsgi/``-hakemistoon ja loin sinne uuden virtuaaliympäristön.  
+```$ cd```  
+```$ cd publicwsgi```  
+```$ virtualenv -p python3 --system-site-packages env```  
+  
+![image](https://user-images.githubusercontent.com/90974678/222219700-3165dcc6-aa55-4fb7-b848-3e48ca6a85d2.png)  
+  
+Siirryin käyttämään uutta virtuaaliympäristöä ja asensin siihen pipillä Djangon.   
+```$ source env/bin/activate```  
+```$ which pip```  
+```$ micro requirements.txt```  
+```django```  
+```pip install -r requirements.txt```  
+```django-admin --version```  
+  
+Asennetun Djangon versio: 4.1.7.  
+
+![image](https://user-images.githubusercontent.com/90974678/222221158-28b924bb-097e-4a3a-b214-1468b5af0385.png)  
+
+### mod_wsgi  
+  
+#### ⏰ 1.3.2023 klo 19.58.
+
+
+
   
 
 
