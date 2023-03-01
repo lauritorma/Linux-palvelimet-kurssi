@@ -47,7 +47,7 @@ Aloitin CRUD-operaatiot komennolla ```psql```.
 
 Loin tietokantaan uuden taulun "items" komennolla ```CREATE TABLE items (id SERIAL PRIMARY KEY, name VARCHAR(200));```. items taulun on columnit "id" ja "name". id on pöydän pääavain.  
 
-Tarkastin komennolla ```\d````, että taulu on luotu ja löytyy.  
+Tarkastin komennolla ```\d```, että taulu on luotu ja löytyy.  
 
 ![image](https://user-images.githubusercontent.com/90974678/219359203-b6a8af91-868d-4d90-a379-e9ce7461664a.png)
 
