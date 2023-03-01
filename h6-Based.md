@@ -71,7 +71,6 @@ Olin aiemmin luonut ```/home/lauritorma``` hakemistoon uuden hakemiston ```publi
 
 Seuraavaksi tulostin kyseisen tiedoston sisällön komennolla ```cat public_sites/index.html```.  
 
-![image](https://user-images.githubusercontent.com/90974678/216943447-040c7819-b50c-42f0-afce-0661f8d11d0b.png)  
 
 Käynnistin apachen komennolla ```sudo systemctl start apache2``` ja siirryin selaimessa osoitteeseen ```http://localhost/```.  
 
