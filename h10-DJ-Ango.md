@@ -40,7 +40,7 @@ Asennetun Djangon versio oli 4.1.7.
 
 ### Django  
 
-Aloitin uuden Django-projektin nimeltä "lauribase" komennolla ```django-admin startproject lauribase```. Siirryin lauribase-projektiin ja käynnistin sen komennolla ```/manage.py runserver```.  
+Aloitin uuden Django-projektin nimeltä "lauribase" komennolla ```django-admin startproject lauribase```. Siirryin lauribase-projektiin ja käynnistin sen komennolla ```./manage.py runserver```.  
   
 Ajoin kuitenkin vielä komennon ```python manage.py migrate```, sillä ilmeisesti projektiin voisi tulla muutoin ongelmia.  
 
