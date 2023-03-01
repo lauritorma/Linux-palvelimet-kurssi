@@ -18,6 +18,8 @@
 
 ## a) Djangon tuotantoasennus  
 
+#### Aloitin työskentelyn 1.3.2023 klo 18.35
+
 ### Alkutoimet  
 
 #### ⏰ 1.3.2023 klo 18.39.
@@ -81,7 +83,7 @@ Siirryin selaimessa osoitteeseen ```http://localhost/static/``` ja haluttu sisä
 
 #### ⏰ 1.3.2023 klo 19.40.  
 
-Olin jo aiemmin asentanut virtualenvin, joten siirryin seuraavaksi ```publicwsgi/``-hakemistoon ja loin sinne uuden virtuaaliympäristön.  
+Olin jo aiemmin asentanut virtualenvin, joten siirryin seuraavaksi ```publicwsgi/``` hakemistoon ja loin sinne uuden virtuaaliympäristön.  
 ```$ cd```  
 ```$ cd publicwsgi```  
 ```$ virtualenv -p python3 --system-site-packages env```  
@@ -100,9 +102,12 @@ Asennetun Djangon versio: 4.1.7.
 
 ![image](https://user-images.githubusercontent.com/90974678/222221158-28b924bb-097e-4a3a-b214-1468b5af0385.png)  
 
+#### Lopetin työskentelyn 1.3.2023 klo 19.58.
+
+#### Jatkoin työskentelyä 2.3.2023 klo xx.xx.
 ### mod_wsgi  
   
-#### ⏰ 1.3.2023 klo 19.58.
+
 
 
 
