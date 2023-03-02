@@ -171,7 +171,7 @@ Tarkistin, että palvelin on Apache.
 
 #### ⏰ 2.3.2023 klo 13.11.  
 
-Poistin vielä Debugin käytöstä muokkaamalla ```lauribase/settings.py``` tiedostoa microlla.  
+Poistin vielä Debugin käytöstä muokkaamalla ```laurisbase/settings.py``` tiedostoa microlla.  
 
 ```$ cd ``` 
 ```$ cd publicwsgi/laurisbase/```
