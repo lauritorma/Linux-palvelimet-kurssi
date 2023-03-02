@@ -104,10 +104,52 @@ Asennetun Djangon versio: 4.1.7.
 
 #### Lopetin työskentelyn 1.3.2023 klo 19.58.
 
-#### Jatkoin työskentelyä 2.3.2023 klo xx.xx.
-### mod_wsgi  
-  
+#### Jatkoin työskentelyä 2.3.2023 klo 11.48.
 
+### mod_wsgi  
+
+#### ⏰ 2.3.2023 klo 11.49.  
+
+```$ sudoedit /etc/apache2/sites-available/lauribase.conf```  
+```
+Define TDIR /home/lauritorma/publicwsgi/lauribase
+Define TWSGI /home/lauritorma/publicwsgi/lauribase/lauribase/wsgi.py
+Define TUSER lauritorma
+Define TVENV /home/lauritorma/publicwsgi/env/lib/python3.9/site-packages
+
+<VirtualHost *:80>
+        Alias /static/ ${TDIR}/static/
+        <Directory ${TDIR}/static/>
+                Require all granted
+        </Directory>
+
+        WSGIDaemonProcess ${TUSER} user=${TUSER} group=${TUSER} threads=5 python-path="${TDIR}:${TVENV}"
+        WSGIScriptAlias / ${TWSGI}
+        <Directory ${TDIR}>
+             WSGIProcessGroup ${TUSER}
+             WSGIApplicationGroup %{GLOBAL}
+             WSGIScriptReloading On
+             <Files wsgi.py>
+                Require all granted
+             </Files>
+        </Directory>
+
+</VirtualHost>  
+  
+Undefine TDIR
+Undefine TWSGI
+Undefine TUSER
+Undefine TVENV 
+
+```
+
+![image](https://user-images.githubusercontent.com/90974678/222394570-14ece292-39b0-41c5-bcaa-c67d1fe3fcef.png)  
+  
+```$ sudo apt-get -y install libapache2-mod-wsgi-py3```   
+```$ /sbin/apache2ctl configtest```   
+```$ sudo systemctl restart apache2```    
+
+![image](https://user-images.githubusercontent.com/90974678/222395297-0c1c8765-6cf3-4a11-98f0-80702b3fbf96.png)
 
 
 
