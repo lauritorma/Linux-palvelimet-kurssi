@@ -110,7 +110,7 @@ Asennetun Djangon versio: 4.1.7.
 
 #### ⏰ 2.3.2023 klo 11.49.  
 
-Loin uuden Django-projektin "laurisbase". 
+Tässä vaiheessa minulla oli ongelmia käyttää aiemmin luomaani "lauribase"-projektia, joten loin uuden Django-projektin "laurisbase", jonne lisäsin myös ```static``` hakemiston.
 
 ```$ django-admin startproject laurisbase```  
 
