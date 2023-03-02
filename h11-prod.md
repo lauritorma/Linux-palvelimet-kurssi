@@ -110,10 +110,16 @@ Asennetun Djangon versio: 4.1.7.
 
 #### ⏰ 2.3.2023 klo 11.49.  
 
+Loin uuden Django-projektin "laurisbase". 
+
+```$ django-admin startproject laurisbase```  
+
+Muokkasin ```/laurisbase.conf``` asetustiedostoa.  
+
 ```$ sudoedit /etc/apache2/sites-available/lauribase.conf```  
 ```
-Define TDIR /home/lauritorma/publicwsgi/lauribase
-Define TWSGI /home/lauritorma/publicwsgi/lauribase/lauribase/wsgi.py
+Define TDIR /home/lauritorma/publicwsgi/laurisbase
+Define TWSGI /home/lauritorma/publicwsgi/laurisbase/laurisbase/wsgi.py
 Define TUSER lauritorma
 Define TVENV /home/lauritorma/publicwsgi/env/lib/python3.9/site-packages
 
@@ -143,28 +149,39 @@ Undefine TVENV
 
 ```
 
-![image](https://user-images.githubusercontent.com/90974678/222394570-14ece292-39b0-41c5-bcaa-c67d1fe3fcef.png)  
+Asensin Apache WSGI moduulin, tarkistin syntaksin joka oli ok ja käynnistin apachen uudestaan.
   
 ```$ sudo apt-get -y install libapache2-mod-wsgi-py3```   
 ```$ /sbin/apache2ctl configtest```   
 ```$ sudo systemctl restart apache2```    
 
-![image](https://user-images.githubusercontent.com/90974678/222395297-0c1c8765-6cf3-4a11-98f0-80702b3fbf96.png)
+![image](https://user-images.githubusercontent.com/90974678/222395297-0c1c8765-6cf3-4a11-98f0-80702b3fbf96.png)  
+
+Siirryin selaimessa localhostiin ja asennus oli onnistunut.  
+
+![image](https://user-images.githubusercontent.com/90974678/222411901-efec41a1-3dd8-4c07-9ba0-2d9b6698384f.png)  
+
+Tarkistin, että palvelin on Apache.  
+
+```$ curl -sI localhost|grep Server```  
+
+![image](https://user-images.githubusercontent.com/90974678/222412104-cea01256-8b0d-4283-90e2-f145a2950f9b.png)  
+
+### DEBUGin poisto käytöstä  
+
+#### ⏰ 2.3.2023 klo 13.11.  
+
+Poistin vielä Debugin käytöstä muokkaamalla ```lauribase/settings.py``` tiedostoa microlla.  
+
+```$ cd ``` 
+```$ cd publicwsgi/laurisbase/```
+```micro laurisbase/settings.py```  
+
+![image](https://user-images.githubusercontent.com/90974678/222414309-b4515dfc-1ab8-4604-bf40-bfd0450d4ed3.png)
 
 
 
-  
-
-
-
-
-
-
-
-
-
-
-
+#### Lopetin työskentelyn 2.3.2023 klo 13.22.
 
 
 
