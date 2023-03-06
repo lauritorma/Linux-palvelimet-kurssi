@@ -220,8 +220,48 @@ Tarkistin vielä configtestillä, että kaikki näyttää hyvältä. Kaikki näy
 
 #### ⏰ 6.3.2023 klo 12.42  
 
+### Ongelman aiheuttaminen  
+
+Aiheutin ongelman asettamalla ```/publicwsgi/laurisbase/laurisbase/settings.py``` tiedoston ```ALLOWED_HOSTS``` kohtaan väärät domain-nimet. "localhost" ja "lauritorma.com" tilalle vaihdoin "localhust" ja "tormalauri.com" joiden pitäisi aiheuttaa ongelmia.  
+
+![image](https://user-images.githubusercontent.com/90974678/223088379-3591a868-6fd3-470c-9fba-f397506c32f4.png)
+
+![image](https://user-images.githubusercontent.com/90974678/223088312-640d01af-8a02-47f3-8d94-b450d9e96b61.png)  
+
+### Oireet  
+
+Käynnistin apachen uudelleen ja koitin curlata localhostia. Vastauksena sain ```Bad Request (400)``` joka viittaisi siihen, että pyynnössä on jokin ongelma.  
+
+![image](https://user-images.githubusercontent.com/90974678/223088980-97e85c71-37a9-459b-90c8-439d1cfa84b2.png)
 
 
+### Lokimerkinnät  
+
+Apachen lokitiedostoista ei löytynyt virheviestiä, josta voisi päätellä ongelman syyn. Kaikki näyttää niissä normaalilta
+
+![image](https://user-images.githubusercontent.com/90974678/223089737-c55a6aad-b06d-427d-bc0d-79b605a69264.png)
+
+### Ongelman korjaus ja toimivuuden testaus  
+
+Kävin korjaamassa ongelman vaihtamalla ```settings.py``` tiedoston ```ALLOWED_HOSTS``` takaisin oikeiksi.  
+
+Käynnistin apachen uudelleen ja curlasin localhostia onnistuneesti. Ongelma korjattu.  
+
+
+![image](https://user-images.githubusercontent.com/90974678/223090718-a8ebdd21-7588-4fc4-a787-762ac2808367.png)
+
+
+#### Lopetin työskentelyn 6.3.2023 klo 12.56.
+
+
+
+### Lähteet
+
+Deploy Django 4 - Production Install. Karvinen 2022. Luettavissa: https://terokarvinen.com/2022/deploy-django/  
+
+Linux chmod command. Computer hope 2021. Luettavissa: https://www.computerhope.com/unix/uchmod.htm
+
+Linux Palvelimet 2023 alkukevät. Tero Karvinen 2023. Luettavissa: https://terokarvinen.com/2023/linux-palvelimet-2023-alkukevat/  
 
 
 
