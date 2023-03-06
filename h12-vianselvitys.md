@@ -37,7 +37,9 @@ Päätin tehdä kirjoitusvirheen polussa ```/publicwsgi/laurisbase/laurisbase```
 
 ![image](https://user-images.githubusercontent.com/90974678/223039749-a29ee404-ad8d-4f0e-ad08-58643d520596.png)
 
-Aiheutin ```settings.py``` tiedostoon kirjoitusvirheen vaihtamalla ```import os``` muotoon ```impor os```.  
+Aiheutin ```settings.py``` tiedostoon kirjoitusvirheen vaihtamalla  
+```import os``` muotoon ```impor os```. 
+
 ![image](https://user-images.githubusercontent.com/90974678/223039453-e5005a56-a20d-4628-af5d-c8cdb7cb8337.png)  
 
 ### Oireet  
