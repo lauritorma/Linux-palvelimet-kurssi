@@ -125,6 +125,7 @@ Käynnistin apachen uudestaan ja koitin curlata localhostia. Vastauksena tuli ``
 ### Lokimerkinnät
 
 ```error.log``` kertoi, että pääsy polkuun ```/home/lauritorma/publicwsgi/laurisbase/laurisbase``` estyi ```because search permissions are missing on a component of the path```.  
+
 ![image](https://user-images.githubusercontent.com/90974678/223071343-055abd42-8613-4292-9f44-215adbb5b892.png)
 
 Tämä oli outoa, koska olin luullut, että ```chmod ugo-rwx``` tarkoittaa samaa kuin ```chmod 777```, joka antaa kaikki oikeudet kaikille. Näin ei näköjään ollut, vaan 777-vastaava komento olikin ```chmod ugo+rwx```, jota testasin myös tässä välissä ja jonka avulla sain curlattua localhostin normaalisti.
@@ -135,10 +136,11 @@ Laitoin ```ugo-rwx``` oikeudet takaisin, jotta voin korjata ne vielä oikein. ``
 
 ### Ongelman korjaus ja toimivuuden testaus  
 
-Muutin projektin oikeuksia niin, että userilla on oikeus kirjoittaa, lukea ja suorittaa, groupilla oikeus lukea ja suorittaa ja otherilla oikeus lukea ja suorittaa.  
+Muutin projektin oikeuksia niin, että userilla on oikeus kirjoittaa, lukea ja suorittaa, groupilla oikeus lukea ja suorittaa ja otherilla oikeus lukea ja suorittaa.   
 ```$ chmod u=rwx,g=rx,o=rx laurisbase/```  
 
 Curlasin localhostin ja se toimi normaalisti.  
+
 ![image](https://user-images.githubusercontent.com/90974678/223078965-562a949d-5eb6-4c80-afd3-2fd4a2f60f54.png)
 
 ## d) Kirjoitusvirhe Apachen asetustiedostossa  
