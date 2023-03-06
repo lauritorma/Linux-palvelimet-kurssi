@@ -75,7 +75,7 @@ Käynnistin apachen uudelleen ja koitin curlata localhostia. Vastauksena tuli ``
 
 ### Lokimerkinnät  
 
-Apachen virhelokiin  
+Siirryin apachen virhelokiin.
 
 ```$ sudo tail -F /var/log/apache2/error.log```  
 
@@ -102,7 +102,127 @@ Käynnistin apachen uudestaan ja curlasin localhostia. Vastauksena tuli ```Not F
 
 ## c) Projektikansiolla väärät oikeudet  
 
-#### ⏰ 6.3.2023 klo 09.54.  
+#### Pidin tauon klo 09:50 ja jatkoin klo 11.28
+
+#### ⏰ 6.3.2023 klo 11.28.  
+
+### Ongelman aiheuttaminen ja oireet
+
+Muutin ```laurisbase/``` projektikansion oikeuksia komennolla ```$ chmod ugo-rwx lauribase/```. (u=user, g=group, o=others) ja (r=read, w=write, x=execute).  
+Kaikilla näillä on nyt siis oikeudet lukea, kirjoittaa ja suorittaa. (edit: olin väärässä. Onkohan siis niin, että - poistaa kaikki oikeudet kaikilta?) 
+
+Käynnistin apachen uudestaan ja koitin curlata localhostia. Vastauksena tuli ```403 Forbidden``` ja selitys, ettei ole oikeuksia päästä käsiksi tähän resurssiin.
+
+![image](https://user-images.githubusercontent.com/90974678/223071254-4839eb13-34d7-4254-b174-64c7205d59fd.png)  
+
+### Lokimerkinnät
+
+```error.log``` kertoi, että pääsy polkuun ```/home/lauritorma/publicwsgi/laurisbase/laurisbase``` estyi ```because search permissions are missing on a component of the path```.  
+![image](https://user-images.githubusercontent.com/90974678/223071343-055abd42-8613-4292-9f44-215adbb5b892.png)
+
+Tämä oli outoa, koska olin luullut, että ```chmod ugo-rwx``` tarkoittaa samaa kuin ```chmod 777```, joka antaa kaikki oikeudet kaikille. Näin ei näköjään ollut, vaan 777-vastaava komento olikin ```chmod ugo+rwx```, jota testasin myös tässä välissä ja jonka avulla sain curlattua localhostin normaalisti.
+
+![image](https://user-images.githubusercontent.com/90974678/223075491-c86d6dc2-a9ec-43ca-a7ac-d8f6a0fff0f7.png)  
+
+Laitoin ```ugo-rwx``` oikeudet takaisin, jotta voin korjata ne vielä oikein. ```ugo+rwx``` kyllä toimii, mutta on vaarallista antaa kaikille rajattomat oikeudet.  
+
+### Ongelman korjaus ja toimivuuden testaus  
+
+Muutin projektin oikeuksia niin, että userilla on oikeus kirjoittaa, lukea ja suorittaa, groupilla oikeus lukea ja suorittaa ja otherilla oikeus lukea ja suorittaa.  
+```$ chmod u=rwx,g=rx,o=rx laurisbase/```  
+
+Curlasin localhostin ja se toimi normaalisti.  
+![image](https://user-images.githubusercontent.com/90974678/223078965-562a949d-5eb6-4c80-afd3-2fd4a2f60f54.png)
+
+## d) Kirjoitusvirhe Apachen asetustiedostossa  
+
+#### ⏰ 6.3.2023 klo 12.06  
+
+### Ongelman aiheuttaminen  
+
+Aiheutin apachen asetustiedostoon ```/etc/apache2/sites-available/laurisbase.conf``` kirjoitusvirheen, poistamalla ```Require all granted``` kohdan  
+```  
+<Directory ${TDIR}/static/>
+                
+</Directory>
+```  
+sisältä ja näin estämällä pääsyn ```/static/``` hakemistoon ja sen sisältöön.  
+
+![image](https://user-images.githubusercontent.com/90974678/223080314-cecc47f1-1be4-4e6e-b080-2523c3430276.png)  
+
+### Oireet  
+
+Käynnistin apachen uudelleen ja yritin curlata ```http://localhost/static/``` osoitetta. Vastauksena tuli ```403 Forbidden``` ja selitys, ettei ole oikeutta tähän resurssiin.  
+
+![image](https://user-images.githubusercontent.com/90974678/223081004-82388af3-347d-4170-be65-9b6b6fb5a11c.png)
+  
+  
+### Lokimerkinnät  
+
+Siirryin apachen virhelokiin.  
+
+Lokin viimeinen rivi kertoo, että on tapahtunut virhe ja kyseessä on authorization-error.  
+```AH01630: client denied by server configuration: /home/lauritorma/publicwsgi/laurisbase/static/```  
+Kertoo, että palvelimen konfigurointi on estänyt ```client ::1:41722``` pääsyn ```/static/``` hakemistoon.  
+
+![image](https://user-images.githubusercontent.com/90974678/223081222-791ae646-7119-4ad3-a822-18748cd9c5d3.png)
+
+### Ongelman korjaus ja toimivuuden testaus  
+
+Kävin korjaamassa ongelman lisäämällä ```Require all granted``` takaisin ```/laurisbase.conf``` asetustiedostoon ja näin sallimalla pääsyn ```/static/``` hakemistoon.  
+Käynnistin apachen uudelleen ja curlasin ```http://localhost/static/``` osoitteen. Sain vastauksena "This is static text!", joka on ```/static/index.html``` tiedoston sisältö. Ongelma siis korjattu.  
+
+![image](https://user-images.githubusercontent.com/90974678/223081612-5ccdd4a1-9a51-417d-b903-3d9b0490cdd8.png)  
+
+## e) Apachen WSGI-moduli puuttuu  
+
+#### ⏰ 6.3.2023 klo 12.26  
+
+### Ongelman aiheuttaminen  
+
+Aiheutin ongelman poistamalla apachen WSGi-moduulin.  
+
+```$ sudo apt-get purge libapache2-mod-wsgi-py3```  
+
+![image](https://user-images.githubusercontent.com/90974678/223084735-a96e931d-7d71-4a4c-ba4e-e7c4f830320f.png)  
+
+### Oireet  
+
+Yritin käynnistää apachen uudelleen, mutta se ei onnistunut. Tarkistin myös apachen tilan komennolla  
+```$ sudo systemctl status apache2```  
+
+Rivi ```Invalid command 'WSGIDaemonProcess', perhaps misspelled or defined by a module not included in the server configuration``` paljastaa, että ```/laurisbase.conf``` asetustiedostossa yritetään ajaa komentoa, jota on ei pysty ajamaan, koska kyseistä moduulia ei löydy palvelimen konfiguraatiosta.  
+
+![image](https://user-images.githubusercontent.com/90974678/223085314-09187cfb-9417-4038-8266-c6ada516699b.png)  
+
+### Lokimerkinnät  
+
+Apachen virheloki ei kerro meille juurikaan muuta, kuin että apache on saanut SIGTERM-signaalin ja sammuttanut itsensä.  
+
+![image](https://user-images.githubusercontent.com/90974678/223086171-091c2717-b588-48bd-adc3-32cad384c574.png)
+
+```$ /sbin/apache2ctl configtest```  kertoo vain saman kuin ylempänä ajettu ```$ sudo systemctl status apache2``` 
+
+![image](https://user-images.githubusercontent.com/90974678/223086928-259a4190-c135-4e1b-898e-d160c52e6394.png)  
+
+
+### Ongelman korjaus ja toimivuuden testaus  
+
+Korjasin ongelman asentamalla WSGI-moduulin.  
+
+```$ sudo apt-get -y install libapache2-mod-wsgi-py3```  
+
+Tarkistin vielä configtestillä, että kaikki näyttää hyvältä. Kaikki näytti olevan ok, joten käynnistin apachen uudelleen ja curlasin localhostia onnistuneesti.
+
+![image](https://user-images.githubusercontent.com/90974678/223087640-203972c3-8dab-4e3e-880e-edaf3d14a062.png)  
+
+## Väärät domain-nimet ALLOWED_HOSTS-kohdassa  
+
+#### ⏰ 6.3.2023 klo 12.42  
+
+
+
+
 
 
 
