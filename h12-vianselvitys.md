@@ -246,7 +246,7 @@ Käynnistin apachen uudelleen ja koitin curlata localhostia. Vastauksena sain ``
 
 ### Lokimerkinnät  
 
-Apachen lokitiedostoista ei löytynyt virheviestiä, josta voisi päätellä ongelman syyn. Kaikki näyttää niissä normaalilta
+Apachen lokitiedostoista ei löytynyt virheviestiä, josta voisi päätellä ongelman syyn, vaan kaikki näyttää normaalilta.  
 
 ![image](https://user-images.githubusercontent.com/90974678/223089737-c55a6aad-b06d-427d-bc0d-79b605a69264.png)
 
