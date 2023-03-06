@@ -26,7 +26,14 @@ Linux Palvelimet 2023 alkukevät. Karvinen 2023. Luettavissa: https://terokarvin
 
 ### Ongelman aiheuttaminen  
 
-Aloitin tehtävän käynnistämällä virtuaaliympäristön. Päätin tehdä kirjoitusvirheen polussa ```/publicwsgi/laurisbase/laurisbase``` sijaitsevaan ```settings.py``` tiedostoon.  
+Aloitin tehtävän käynnistämällä virtuaaliympäristön ja tarkistamalla, että kaikki toimii oikein.  
+
+Uudelleenkäynnistin apachen ja curlasin localhostia. Huomiona tässä vaiheessa, että vastauksena saatu ```Not Found``` on haluttu vastaus silloin kun palvelimen pitäisi toimia oikein. Eli tämä on se tila, jossa *ei ole ongelmia*.  
+
+![image](https://user-images.githubusercontent.com/90974678/223092269-6cac605b-2074-4f97-a7d8-0a9819fc6ff9.png)
+
+
+Päätin tehdä kirjoitusvirheen polussa ```/publicwsgi/laurisbase/laurisbase``` sijaitsevaan ```settings.py``` tiedostoon.  
 
 ![image](https://user-images.githubusercontent.com/90974678/223039749-a29ee404-ad8d-4f0e-ad08-58643d520596.png)
 
