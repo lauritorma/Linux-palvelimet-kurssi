@@ -152,6 +152,11 @@ Hello World Python3, Bash, C, C++, Go, Lua, Ruby, Java – Programming Languages
 
 Linux Palvelimet 2023 alkukevät. Tero Karvinen 2023. Luettavissa: https://terokarvinen.com/2023/linux-palvelimet-2023-alkukevat/  
 
+Java Hello World example on Linux. Rendek 2020. Luettavissa: https://linuxconfig.org/java-hello-world-example-on-linux
+
+
+How To Install Java with Apt on Ubuntu 18.04. Vlaswinkel 2018. Luettavissa: https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-18-04  
+
 
 
 
