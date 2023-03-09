@@ -142,7 +142,9 @@ print ("Hello", name)
 Apuna ohjelman teossa käytin seuraavaa aineistoa:  
   
 How to use sys.argv in Python. GeeksForGeeks 2019. Luettavissa: https://www.geeksforgeeks.org/how-to-use-sys-argv-in-python/  
-
+  
+  
+#### Lopetin työskentelyn 9.3.2023 klo 13.30.
 
 ### Muut lähteet
 
