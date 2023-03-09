@@ -171,11 +171,25 @@ Hellon jälkeen jäi välilyönti laittamatta, mutta ohjelma toimii.
 
 ![image](https://user-images.githubusercontent.com/90974678/224013914-ead18494-43b7-439c-b8b9-932218600512.png)
 
+### Bash 
+
+Loin uuden skriptitiedoston ```greetme.sh```, johon kirjoitin microlla skriptin, joka ottaa käyttäjältä komentoriviargumentin ja tulostaa tervehdyksen. Lopuksi ajoin skriptin.  
+
+```touch greetme.sh```  
   
+```micro greetme.sh```  
+  
+```echo "Hello $1"```  
+  
+```bash greetme.sh Lauri```  
+  
+```Hello Lauri```  
+  
+![image](https://user-images.githubusercontent.com/90974678/224015012-1033b329-0f6e-4da8-9fcd-5468389ae385.png)
 
 
   
-#### Lopetin työskentelyn 9.3.2023 klo 13.30.
+#### Lopetin työskentelyn 9.3.2023 klo 13.54.
 
 ### Lähteet
 
@@ -191,5 +205,5 @@ How To Install Java with Apt on Ubuntu 18.04. Vlaswinkel 2018. Luettavissa: http
 
 Java Command Line Arguments. javatpoint.com. Luettavissa: https://www.javatpoint.com/command-line-argument
 
-
+How to Read Command Line Arguments in Shell Scripts?. ninad 2022. Luettavissa: https://www.digitalocean.com/community/tutorials/read-command-line-arguments-in-shell-scripts
 
