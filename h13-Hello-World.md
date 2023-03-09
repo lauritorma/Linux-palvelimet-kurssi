@@ -142,7 +142,7 @@ print ("Hello", name)
   
 #### Lopetin työskentelyn 9.3.2023 klo 13.30.
 
-### Muut lähteet
+### Lähteet
 
 Hello World Python3, Bash, C, C++, Go, Lua, Ruby, Java – Programming Languages on Ubuntu 18.04. Karvinen 2018. Luettavissa: https://terokarvinen.com/2018/hello-python3-bash-c-c-go-lua-ruby-java-programming-languages-on-ubuntu-18-04/
 
