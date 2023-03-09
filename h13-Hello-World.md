@@ -139,10 +139,6 @@ print ("Hello", name)
 
 ![image](https://user-images.githubusercontent.com/90974678/224009840-307c13db-1707-4756-874b-ceab1eb21abd.png)  
 
-Apuna ohjelman teossa käytin seuraavaa aineistoa:  
-  
-How to use sys.argv in Python. GeeksForGeeks 2019. Luettavissa: https://www.geeksforgeeks.org/how-to-use-sys-argv-in-python/  
-  
   
 #### Lopetin työskentelyn 9.3.2023 klo 13.30.
 
@@ -154,7 +150,8 @@ Linux Palvelimet 2023 alkukevät. Tero Karvinen 2023. Luettavissa: https://terok
 
 Java Hello World example on Linux. Rendek 2020. Luettavissa: https://linuxconfig.org/java-hello-world-example-on-linux
 
-
+How to use sys.argv in Python. GeeksForGeeks 2019. Luettavissa: https://www.geeksforgeeks.org/how-to-use-sys-argv-in-python/  
+  
 How To Install Java with Apt on Ubuntu 18.04. Vlaswinkel 2018. Luettavissa: https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-18-04  
 
 
