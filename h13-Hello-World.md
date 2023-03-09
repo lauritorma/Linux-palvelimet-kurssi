@@ -173,7 +173,7 @@ Hellon jälkeen jäi välilyönti laittamatta, mutta ohjelma toimii.
 
 ### Bash 
 
-Loin uuden skriptitiedoston ```greetme.sh```, johon kirjoitin microlla skriptin, joka ottaa käyttäjältä komentoriviargumentin ja tulostaa tervehdyksen. Lopuksi ajoin skriptin.  
+Loin uuden skriptitiedoston ```greetme.sh```, johon kirjoitin microlla skriptin, joka ottaa käyttäjältä komentoriviargumentin ja tulostaa tervehdyksen. Lopuksi suoritin skriptin.  
 
 ```touch greetme.sh```  
   
