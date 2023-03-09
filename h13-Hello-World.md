@@ -85,7 +85,7 @@ Asensin ensin Java Runtime Environmentin (JRE), sekä Java Development Kitin (JD
 
 ![image](https://user-images.githubusercontent.com/90974678/224003739-ca87f2e1-262d-4610-846a-446d15bc5ca1.png)
 
-Loin uuden tiedoston ```HelloWorld.java````, johon kirjoitin luokan joka tulostaa "Hello World!". Käänsin ```HelloWorld.java``` tiedoston, jolloin luotiin ```HelloWorld.class``` tiedosto. 
+Loin uuden tiedoston ```HelloWorld.java```, johon kirjoitin luokan joka tulostaa "Hello World!". Käänsin ```HelloWorld.java``` tiedoston, jolloin luotiin ```HelloWorld.class``` tiedosto. 
 Lopuksi suoritin tiedoston.  
 
 ```touch HelloWorld.java```  
