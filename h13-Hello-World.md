@@ -139,6 +139,41 @@ print ("Hello", name)
 
 ![image](https://user-images.githubusercontent.com/90974678/224009840-307c13db-1707-4756-874b-ceab1eb21abd.png)  
 
+## c) greetme kahdella muulla kielellä  
+
+#### ⏰ 9.3.2023 klo 13.40. 
+
+### Java  
+
+Tein greetme-ohjelman seuraavaksi Javalla.  
+Loin uuden tiedoston ```greetme.java``` ja kirjoitin microlla sinne luokan, joka ottaa käyttäjältä komentoriviargumentin ja tulostaa tervehdyksen. Lopuksi käänsin ohjelman ja ajoin sen.  
+
+```touch Greetme.java```  
+  
+```micro Greetme.java```  
+  
+```
+class Greetme{  
+public static void main(String args[]){  
+System.out.println("Hello"+args[0]);  
+}  
+}  
+
+```  
+  
+```javac Greetme.java```  
+  
+```java Greetme Lauri```  
+  
+```HelloLauri```  
+
+Hellon jälkeen jäi välilyönti laittamatta, mutta ohjelma toimii.  
+
+![image](https://user-images.githubusercontent.com/90974678/224013914-ead18494-43b7-439c-b8b9-932218600512.png)
+
+  
+
+
   
 #### Lopetin työskentelyn 9.3.2023 klo 13.30.
 
@@ -154,6 +189,7 @@ How to use sys.argv in Python. GeeksForGeeks 2019. Luettavissa: https://www.geek
   
 How To Install Java with Apt on Ubuntu 18.04. Vlaswinkel 2018. Luettavissa: https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-18-04  
 
+Java Command Line Arguments. javatpoint.com. Luettavissa: https://www.javatpoint.com/command-line-argument
 
 
 
