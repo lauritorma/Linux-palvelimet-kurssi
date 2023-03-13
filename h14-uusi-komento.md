@@ -58,7 +58,7 @@ Asetin tiedoston käyttöoikeudet niin, että se voidaan suorittaa. Muutin tiedo
 ## c) Linuxiin komento, joka tekee jotain usealle tiedostolle.  
 
   
-  
+   
   
   
   
