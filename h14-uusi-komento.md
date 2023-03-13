@@ -40,6 +40,34 @@ Kirjoitin ```custom_aliases``` tiedostoon microlla aliaksen, joka kutsuttaessa t
   
 ```Welcome lauritorma.```
 
-![image](https://user-images.githubusercontent.com/90974678/224666488-a14230d3-c6d8-459f-a081-399432ef5694.png)
+![image](https://user-images.githubusercontent.com/90974678/224666488-a14230d3-c6d8-459f-a081-399432ef5694.png) 
 
+
+## b) Linuxiin uusi komento Pythonilla  
+
+#### ⏰ 9.3.2023 klo 15.25.
+
+Loin uuden tiedoston ```telldaytime.py``` ja kirjoitin siihen microlla koodin, joka ottaa komentoriviparametrina joko "date", "time" tai jonkin muun sanan ja tulostaa sen mukaan joko päivämäärän, ajan tai molemmat.  
+  
+Asetin tiedoston käyttöoikeudet niin, että se voidaan suorittaa. Muutin tiedoston nimeä niin, että .py pääte jäi pois. 
+
+
+![image](https://user-images.githubusercontent.com/90974678/224721225-c297e789-b325-4e83-ad02-db320d9317f3.png)
+  
+
+## c) Linuxiin komento, joka tekee jotain usealle tiedostolle.  
+
+  
+  
+  
+  
+  
+  
+#### Lopetin työskentelyn 9.3.2023 klo 13.54.
+
+### Lähteet
+
+
+
+Linux Palvelimet 2023 alkukevät. Tero Karvinen 2023. Luettavissa: https://terokarvinen.com/2023/linux-palvelimet-2023-alkukevat/  
 
