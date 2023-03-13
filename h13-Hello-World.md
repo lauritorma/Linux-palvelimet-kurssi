@@ -188,8 +188,7 @@ Loin uuden skriptitiedoston ```greetme.sh```, johon kirjoitin microlla skriptin,
 ![image](https://user-images.githubusercontent.com/90974678/224015012-1033b329-0f6e-4da8-9fcd-5468389ae385.png)
 
 
-  
-#### Lopetin työskentelyn 9.3.2023 klo 13.54.
+
 
 ### Lähteet
 
