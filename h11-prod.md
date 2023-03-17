@@ -116,7 +116,7 @@ Tässä vaiheessa minulla oli ongelmia käyttää aiemmin luomaani "lauribase"-p
 
 Muokkasin ```/laurisbase.conf``` asetustiedostoa.  
 
-```$ sudoedit /etc/apache2/sites-available/lauribase.conf```  
+```$ sudoedit /etc/apache2/sites-available/laurisbase.conf```  
 ```
 Define TDIR /home/lauritorma/publicwsgi/laurisbase
 Define TWSGI /home/lauritorma/publicwsgi/laurisbase/laurisbase/wsgi.py
