@@ -53,7 +53,7 @@ Tarkastin komennolla ```\d```, että taulu on luotu ja löytyy.
 
 ![image](https://user-images.githubusercontent.com/90974678/219359203-b6a8af91-868d-4d90-a379-e9ce7461664a.png)
 
-Lisäsin items tauluun uusia arvoja komennolla ```INSERT INTO students(name) VALUES ('esimerkki');```.  
+Lisäsin items tauluun uusia arvoja komennolla ```INSERT INTO items(name) VALUES ('esimerkki');```.  
 
 ![image](https://user-images.githubusercontent.com/90974678/219360145-a3435d94-4a42-4d9a-b096-e468d2e6f3cf.png) 
 
